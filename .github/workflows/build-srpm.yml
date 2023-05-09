@@ -1,0 +1,20 @@
+name: build-srpm
+run-name: Build a srpm on push
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: build RPM package
+      id: rpm
+      uses: naveenrajm7/rpmbuild@master
+      with:
+        spec_file: "hiba.spec"
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: Source RPM
+        path: ${{ steps.rpm.outputs.source_rpm_dir_path }}
