@@ -4,7 +4,7 @@ Release: 1
 Summary: a system built on top of regular OpenSSH certificate-based authentication
 License: BSD
 URL: https://github.com/google/%{name}
-Source: https://github.com/google/hiba/archive/refs/heads/main.tar.gz
+Source: https://github.com/google/%{name}/%{name}-%{version}.tar.gz
 Packager: Ryan Shea <ryanshea@google.com>
 
 %description
