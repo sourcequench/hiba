@@ -1,7 +1,7 @@
 Name: hiba
 Version: 1.0
 Release: 1
-Summary: a system built on top of regular OpenSSH certificate-based authentication
+Summary: a system built on top of regular OpenSSH certificate authentication
 License: BSD
 URL: https://github.com/google/%{name}
 Source: https://github.com/google/%{name}/%{name}-%{version}.tar.gz
